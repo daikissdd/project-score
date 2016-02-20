@@ -1,0 +1,27 @@
+# temp files from editors
+*~
+*.bak
+.DS_Store
+.buildpath
+.project
+.settings
+*.tmproj
+build
+.idea
+nbproject/
+.sass-cache
+Thumbs.db
+desktop.ini
+.buildpath
+.scssc
+bower_components
+temp
+.tmp
+composer.lock
+node_modules
+temp
+.tmp
+.sass-cache
+app/bower_components
+test/bower_components
+package

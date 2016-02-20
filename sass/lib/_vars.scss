@@ -1,0 +1,26 @@
+/* global color */
+$bg-color: black;
+$content-bg-color: #292929;
+$table-header: #3AAAE9;
+$table-body-bg: white;
+$table-body-color: black;
+$blue-aqua: #3AAAEA;
+
+/* global layout */
+$width: 1100px;
+$header-height: 50px;
+$full-width: 1100px;
+
+/* input-form */
+
+/* keyword-result */
+$keyword-left-width: 260px;
+$keyword-right-width: $full-width - $keyword-left-width;
+$keyword-right-chart-width: 400px;
+$keyword-right-table-width: $keyword-right-width - $keyword-right-chart-width;
+
+/* compare-result */
+$compare-left-width: 240px;
+$compare-right-width: $full-width - $compare-left-width;
+$compare-right-chart-width: 400px;
+$compare-right-table-width: $compare-right-width - $compare-right-chart-width;

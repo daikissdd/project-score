@@ -1,0 +1,99 @@
+/* compare-page-info  */
+
+.compare-page-info {
+	background-color: $blue-aqua;
+	span {
+		font-size: 12px;
+		display: inline-block;
+	}
+	p {
+		padding: 6px;
+		padding-left: 10px;
+	}
+	p:first-child {
+		@include niceLine();
+		padding: 6px;
+		padding-left: 10px;
+	}
+	p span {
+		display: inline-block;
+		margin-right: 8px;
+	}
+	p span:first-child {
+		width: 92px;
+		border-right: 1px solid rgba(117, 117, 117, 0.4);
+	}
+	p span:last-child {
+		color: black;
+		font-weight: bold;
+	}
+}
+
+/* compare-left */
+.compare-left {
+	vertical-align: top;
+	display: inline-block;
+	width: $compare-left-width;
+	background-color: $bg-color;
+}
+.compare-left-level-box {
+	.compare-left-level-result { @include bigNumber() }
+}
+.compare-left-advice-box {
+	height: 170px;
+	.compare-left-advice-text { @include leftSideContentPadding(); }
+}
+
+/* compare-right */
+.compare-right {
+	vertical-align: top;
+	display: inline-block;
+	width: $compare-right-width;
+}
+
+.compare-right-chart-box {
+	display: inline-block;
+	border-left: none;
+	border-right: none;
+	width: $compare-right-chart-width;
+	.compare-right-chart-canvas {
+		height: $compare-right-chart-width - 60px;
+		border: 1px solid white;
+		background-color: black;
+		padding-top: 30px;
+		padding-left: 2px;
+	}
+}
+
+/* compare-right tables */
+.compare-right-table-box {
+	display: inline-block;
+	border-left: none;
+	width: $compare-right-table-width;
+	tbody { height: $compare-right-chart-width - 90px; }
+	td, th {
+		&:nth-child(1) { width: 40px; }
+		&:nth-child(2) {
+			width: 220px;
+			text-align: left;
+			padding-left: 10px;
+		}
+
+	}
+}
+
+.compare-right-big-table-box {
+	tbody { height: 320px; }
+	td, th {
+		&:nth-child(2) {
+			width: 280px;
+			text-align: left;
+			padding-left: 10px;
+		}
+		&:nth-child(3) {
+			width: 220px;
+			text-align: left;
+			padding-left: 10px;
+		}
+	}
+}

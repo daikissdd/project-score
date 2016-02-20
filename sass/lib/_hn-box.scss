@@ -1,0 +1,16 @@
+.hn-box {
+	tbody { height: 280px; }
+	td, th {
+		&:nth-child(2) { width: 40px; }
+		&:nth-child(3) {
+			width: 660px;
+			text-align: left;
+			padding-left: 10px;
+		}
+		&:nth-child(4) {
+			width: 360px;
+			text-align: left;
+			padding-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+/* keyword-left */
+.keyword-left {
+	vertical-align: top;
+	display: inline-block;
+	width: $keyword-left-width;
+	background-color: $bg-color;
+}
+.keyword-left-search-box {
+	background-color: $blue-aqua;
+	.keyword-left-search-word-title { @include niceLine(); }
+	.keyword-left-search-word {
+		padding-top: 4px;
+		font-weight: bold;
+		font-size: 18px;
+		color: black;
+	}
+}
+.keyword-left-level-box {
+	.keyword-left-level-result { @include bigNumber(); }
+}
+.keyword-left-advice-box {
+	height: 200px;
+	.keyword-left-advice-text { @include leftSideContentPadding(); }
+}
+
+.keyword-left-download-box {
+	.keyword-left-download-btn {
+		@include leftSideContentPadding();
+		a:last-child { padding-left: 10px; }
+		img {
+			width: ($keyword-left-width - 35px) / 2;
+			height: auto;
+		}
+	}
+}
+.keyword-left-ask-box {
+	.keyword-left-ask-link {
+		@include leftSideContentPadding();
+		img:first-child { padding-bottom: 10px; }
+		img {
+			width: $keyword-left-width - 25px;
+			height: auto;
+		}
+	}
+}
+
+/* keyword-right */
+.keyword-right {
+	vertical-align: top;
+	display: inline-block;
+	width: $keyword-right-width;
+}
+.keyword-right-chart-box {
+	display: inline-block;
+	width: $keyword-right-chart-width;
+	border-left: none;
+	border-right: none;
+	.keyword-right-chart-canvas {
+		height: $compare-right-chart-width - 46px;
+		border: 1px solid white;
+		background-color: gray;
+	}
+}
+
+/* keyword-right tables */
+.keyword-right-table-box {
+	display: inline-block;
+	width: $keyword-right-table-width;
+	border-left: none;
+	tbody { height: $compare-right-chart-width - 76px; }
+	td, th {
+		&:nth-child(2) {
+			width: 200px;
+			text-align: left;
+			padding-left: 10px;
+		}
+	}
+}
+.keyword-right-big-table-box {
+	border-left: none;
+	tbody { height: 174px; }
+	td, th {
+		overflow: hidden;
+		word-break:break-all;
+		text-overflow: ellipsis;
+		
+		&:nth-child(2) {
+			width: 330px;
+			text-align: left;
+			padding-left: 10px;
+		}
+		&:nth-child(3) {
+			width: 210px;
+			text-align: left;
+			padding-left: 10px;
+		}
+	}
+}
