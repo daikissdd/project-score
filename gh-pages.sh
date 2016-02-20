@@ -1,3 +1,3 @@
 #!/bin/sh
 
-git push origin gh-pages
+git add -A && git commit -m'update' && git push origin gh-pages
