@@ -1,3 +1,3 @@
 #!/bin/sh
 
-git subtree push --prefix ./ origin gh-pages
+git add -A && git commit -m'update' && git push origin gh-pages
